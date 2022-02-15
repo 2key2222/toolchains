@@ -1,0 +1,7 @@
+/* GNU ld script
+ * Use the shared library, but some functions are only in
+ * the static library, so try that secondarily. */
+OUTPUT_FORMAT("elf64-tradlittlemips", "elf64-tradbigmips",
+	      "elf64-tradlittlemips")
+GROUP ( /lib64/libc.so.1 /usr/lib64/uclibc_nonshared.a libpthread_nonshared.a AS_NEEDED ( /lib64/ld64-uClibc.so.1 ) )
+

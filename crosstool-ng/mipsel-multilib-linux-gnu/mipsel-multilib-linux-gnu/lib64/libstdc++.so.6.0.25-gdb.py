@@ -1,0 +1,1 @@
+../../mipsel-multilib-linux-gnu/sysroot/lib64/libstdc++.so.6.0.25-gdb.py
